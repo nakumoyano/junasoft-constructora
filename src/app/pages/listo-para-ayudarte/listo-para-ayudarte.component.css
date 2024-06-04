@@ -1,0 +1,46 @@
+.card {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.572), rgba(0, 0, 0, 0.413)),
+        url("https://images.unsplash.com/uploads/14123892966835548e7bd/14369636?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+
+    width: 20%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+
+.content {
+    justify-content: center;
+    height: 100%;
+    color: #000;
+    width: 100%;
+    text-align: center;
+
+    background: #fff;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin: auto;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 900px) {
+    .card {
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin: auto;
+        margin-top: 20px;
+    }
+}

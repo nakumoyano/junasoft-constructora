@@ -1,0 +1,20 @@
+.hero {
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0.553)),
+        url("https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+    .hero {
+        background-size: contain;
+        width: 100%;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.413), rgba(0, 0, 0, 0.413)),
+            url("https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}

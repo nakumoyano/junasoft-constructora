@@ -1,0 +1,74 @@
+<nav class="bg-[#363d43] absolute w-full z-50">
+  <div
+    [ngClass]="
+      isScrolled
+        ? 'w-full flex flex-wrap items-center justify-between mx-auto p-4 fixed sm:px-[1rem] lg:px-[2rem] bg-[#07070774]'
+        : 'w-full flex flex-wrap items-center justify-between mx-auto p-4 fixed sm:px-[1rem] lg:px-[2rem] '
+    "
+  >
+    <a href="" class="flex items-center space-x-3 rtl:space-x-reverse">
+      <span
+        class="self-center text-2xl font-semibold whitespace-nowrap text-yellow-500"
+        >JUNASOFT</span
+      >
+    </a>
+    <button
+      data-collapse-toggle="navbar-dropdown"
+      type="button"
+      class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg lg:hidden md:hidden focus:outline-none focus:ring-2 text-gray-400 hover:bg-gray-700 focus:ring-gray-600"
+      aria-controls="navbar-dropdown"
+      aria-expanded="false"
+    >
+      <span class="sr-only">Open main menu</span>
+      <i class="fa-solid fa-bars-staggered text-lg text-white"></i>
+      <!-- <i class="fa-solid fa-xmark"></i> -->
+    </button>
+    <div
+      class="hidden w-full lg:block md:block md:w-auto space-y-4"
+      id="navbar-dropdown"
+    >
+      <ul
+        class="flex flex-col font-bold p-4 md:p-0 mt-4 border lg:bg-transparent md:bg-transparent sm:bg-gray-300 lg:text-white md:text-white sm:text-black rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 items-center"
+      >
+        <li>
+          <a
+            href=""
+            class="block py-2 pl-3 pr-4 md:hover:text-yellow-500 rounded md:bg-transparent md:p-0 md:dark:bg-transparent"
+            aria-current="page"
+            >Inicio</a
+          >
+        </li>
+
+        <li>
+          <a
+            href="#servicios"
+            class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-500 md:p-0"
+            >Servicios</a
+          >
+        </li>
+        <li>
+          <a
+            href="#porque-elegirnos"
+            class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-500 md:p-0"
+            >Porque elegirnos</a
+          >
+        </li>
+
+        <li>
+          <a
+            href="#donde-estamos"
+            class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-yellow-500 md:p-0"
+            >¿Dónde estamos?</a
+          >
+        </li>
+        <li>
+          <button
+            class="px-4 py-2 border hover:bg-yellow-600 hover:border-yellow-600"
+          >
+            Contactanos
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
